@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="./style/app.css">
+  <link rel="stylesheet" href="./style/signup.css">
+</head>
+
+<body>
+  <h1>Sign up form</h1>
+  <a href="./index.html">Go back</a>
+  <form>
+    <div class="container">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="name"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" id="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" id="psw-repeat" required>
+      <hr>
+
+
+      <button type="button" class="registerbtn" onclick="signUp(event)">Register</button>
+    </div>
+
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
+  <script src="./js/app.js"></script>
+  <script src="./js/signup.js"></script>
+</body>
+
+</html>
